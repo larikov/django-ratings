@@ -13,7 +13,7 @@ setup(
     author='David Cramer',
     author_email='dcramer@gmail.com',
     description='Generic Ratings in Django',
-    url='http://github.com/dcramer/django-ratings',
+    url='http://github.com/larikov/django-ratings',
     install_requires=[
         'django',
     ],

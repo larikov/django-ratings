@@ -2,13 +2,15 @@ import unittest
 import random
 
 from django.db import models
-from django.contrib.auth.models import User
 from django.contrib.contenttypes.models import ContentType
 from django.conf import settings
 
 from exceptions import *
 from models import Vote, SimilarUser, IgnoredObject
 from fields import AnonymousRatingField, RatingField
+
+from djangoratings.compat import get_user_model
+User = get_user_model()
 
 settings.RATINGS_VOTES_PER_IP = 1
 
